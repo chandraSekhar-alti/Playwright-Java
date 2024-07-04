@@ -3,17 +3,25 @@ package com.playwright.tests;
 import com.github.javafaker.Faker;
 import com.microsoft.playwright.Page;
 import com.playwright.Utils.BaseTest;
+import com.playwright.Utils.UI;
 import com.playwright.pages.CartPage;
+import com.playwright.pages.HomePage;
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+@Epic("Cart Functionality")
 public class CartPageTest extends BaseTest {
     private CartPage cartPage;
+    private HomePage homePage;
+    private UI ui;
 
-
-    @Test
-    public void verifyingOrderingAnItemFlow(){
+    @Test(description = "This test verifies the complete flow of ordering an item.")
+    @Owner("Chandrasekhar Alti")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("As a user, I should be able to add items to the cart, proceed to checkout, and place an order successfully.")
+    @Link(name = "Cart Page", url = "https://dev.example.com/cart")
+    public void testCompleteOrderFlow(){
         Page page = getPage();
         cartPage = new CartPage(page);
         Faker faker = new Faker();
@@ -30,6 +38,32 @@ public class CartPageTest extends BaseTest {
         page.locator(cartPage.orderSuccessMessage).isVisible();
         String actualText = page.locator(cartPage.orderSuccessMessage).innerText();
         Assert.assertEquals(actualText,"THANK YOU FOR YOUR ORDER");
+        Assert.fail();
 
+    }
+
+    @Test(description = "This test verifies the visibility of various elements on the cart page and home page.")
+    @Owner("Chandrasekhar Alti")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("As a user, I should be able to see and interact with essential elements on the cart page and home page.")
+    @Link(name = "Cart Page", url = "https://dev.example.com/cart")
+    public void testCartPageVisibilityChecks(){
+        Page page = getPage();
+        cartPage = new CartPage(page);
+        homePage = new HomePage(page);
+        ui = new UI(page);
+
+        page.locator(homePage.cartButton).isVisible();
+        ui.highlightElementByGreen(homePage.cartButton);
+        page.locator(homePage.cartButton).click();
+        page.locator(cartPage.checkOutButton).isVisible();
+        ui.highlightElementByGreen(cartPage.checkOutButton);
+        homePage.checkLinkedInIconVisibility();
+        homePage.checkFacebookIconVisibility();
+        homePage.checkTwitterIconVisibility();
+        page.locator(cartPage.continueShoppingButton).isVisible();
+        ui.highlightElementByGreen(cartPage.continueShoppingButton);
+        page.locator(cartPage.cartListSection).isVisible();
+        homePage.checkFooterRobotImageVisibility();
     }
 }

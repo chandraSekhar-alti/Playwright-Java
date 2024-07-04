@@ -26,6 +26,9 @@ public class CartPage {
     public final String continueButton = "input[value='CONTINUE']";
     public final String finishButton = "//a[text()='FINISH']";
     public final String orderSuccessMessage = ".complete-header";
+    public final String continueShoppingButton = ".btn_secondary";
+    public final String cartListSection = ".cart_list";
+
 
 
     public void clickOnFinishButton(){
