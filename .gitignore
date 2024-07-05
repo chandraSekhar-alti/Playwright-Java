@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### ignore failure screenshots ###
+src/test/resources/Screenshots/*

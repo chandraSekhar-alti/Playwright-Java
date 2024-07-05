@@ -2,18 +2,26 @@ package com.playwright.Utils;
 
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
+import io.qameta.allure.Attachment;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import io.qameta.allure.Allure;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class BaseTest {
     private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
-    protected Page page;
+    public Page page;
     private BrowserContext context;
     private BrowserFactory browserFactory;
     private AuthActions authActions;
@@ -23,7 +31,7 @@ public class BaseTest {
     private String userName;
     private String password;
 
-    @BeforeSuite
+    @BeforeClass
     public void loadEnvVariables() {
         try {
             logger.info("Running BeforeSuite");
@@ -57,7 +65,28 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void tearDown() {
+    public void tearDown(ITestResult result) {
+        if (!result.isSuccess()){
+            logger.info("Test failed: {}", result.getName());
+            if (page != null) {
+                String screenshotPath = System.getProperty("user.dir")+"\\src\\test\\resources\\Screenshots\\"+result.getName()+".png";
+
+                Path path = Paths.get(screenshotPath);
+
+                page.screenshot(new Page.ScreenshotOptions()
+                        .setPath(path)
+                        .setFullPage(true));
+
+               try (InputStream is = Files.newInputStream(path)){
+                        Allure.attachment(result.getName()+".png",is);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                logger.info("Screenshot taken for test: {}", result.getName());
+            } else {
+                logger.warn("Page object is null, cannot take screenshot for test: {}", result.getName());
+            }
+        }
         authActions = new AuthActions(page);
         authActions.logout();
 
@@ -72,6 +101,9 @@ public class BaseTest {
             if (browserFactory.getBrowser() != null) {
                 browserFactory.getBrowser().close();
             }
+            if (browserFactory.getPlaywright() != null){
+                browserFactory.getPlaywright().close();
+            }
         } catch (Exception e) {
             logger.error("Failed to tear down browser context and page", e);
         }
@@ -80,4 +112,20 @@ public class BaseTest {
     public Page getPage() {
         return page;
     }
+
+    @Attachment(value = "Screenshot of {0}", type = "image/png")
+    public byte[] takeScreenshot(String name) {
+        try {
+            if (page != null) {
+                return page.screenshot(new Page.ScreenshotOptions().setFullPage(true));
+            } else {
+                logger.warn("Page object is null, cannot take screenshot");
+                return new byte[0];
+            }
+        } catch (Exception e) {
+            logger.error("Failed to take screenshot for test: {}", name, e);
+            return new byte[0];
+        }
+    }
+
 }

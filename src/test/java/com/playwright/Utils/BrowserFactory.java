@@ -10,7 +10,7 @@ import java.util.Properties;
 public class BrowserFactory {
     private static final Logger logger = LogManager.getLogger(BrowserFactory.class);
     public Browser browser;
-
+    Playwright playwright;
     public void BrowserSetUp(){
         Properties properties = ReadPropertyFile.loadProperties("config.properties");
         String browserName =properties.getProperty("browser");
@@ -18,7 +18,7 @@ public class BrowserFactory {
         boolean runMode = Boolean.parseBoolean(properties.getProperty("headless"));
 
         logger.info("This will run before the class");
-        Playwright playwright = Playwright.create();
+        playwright = Playwright.create();
 
         if (browserName.equalsIgnoreCase("chrome")){
             browser = playwright.chromium().launch(
@@ -46,6 +46,10 @@ public class BrowserFactory {
 
     public Browser getBrowser(){
         return browser;
+    }
+
+    public Playwright getPlaywright(){
+        return playwright;
     }
 
     public BrowserContext createBrowserContext(int width, int height){

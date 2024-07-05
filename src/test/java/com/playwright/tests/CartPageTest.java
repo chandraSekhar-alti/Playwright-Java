@@ -38,8 +38,6 @@ public class CartPageTest extends BaseTest {
         page.locator(cartPage.orderSuccessMessage).isVisible();
         String actualText = page.locator(cartPage.orderSuccessMessage).innerText();
         Assert.assertEquals(actualText,"THANK YOU FOR YOUR ORDER");
-        Assert.fail();
-
     }
 
     @Test(description = "This test verifies the visibility of various elements on the cart page and home page.")
@@ -57,7 +55,6 @@ public class CartPageTest extends BaseTest {
         ui.highlightElementByGreen(homePage.cartButton);
         page.locator(homePage.cartButton).click();
         page.locator(cartPage.checkOutButton).isVisible();
-        ui.highlightElementByGreen(cartPage.checkOutButton);
         homePage.checkLinkedInIconVisibility();
         homePage.checkFacebookIconVisibility();
         homePage.checkTwitterIconVisibility();
@@ -65,5 +62,13 @@ public class CartPageTest extends BaseTest {
         ui.highlightElementByGreen(cartPage.continueShoppingButton);
         page.locator(cartPage.cartListSection).isVisible();
         homePage.checkFooterRobotImageVisibility();
+    }
+
+    @Test(description = "This test case written for explicitly failing a test case and verifying the reports")
+    @Owner("Chandrasekhar Alti")
+    @Severity(SeverityLevel.NORMAL)
+    @Link(name = "Cart Page", url = "https://dev.example.com/cart")
+    public void failTestCase() {
+        Assert.fail("Intentionally failing the test");
     }
 }
