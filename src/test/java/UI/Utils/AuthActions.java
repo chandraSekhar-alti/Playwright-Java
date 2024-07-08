@@ -24,6 +24,8 @@ public class AuthActions {
             page.locator("#user-name").fill(userName);
             page.locator("#password").fill(password);
             page.locator("#login-button").click();
+            page.locator(".app_logo").waitFor();
+            page.locator(".app_logo").isVisible();
             logger.info("Logged into the application");
         }catch (Exception e){
             logger.error("Login failed for the userName {}",userName, e);
