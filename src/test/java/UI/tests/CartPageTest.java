@@ -1,11 +1,11 @@
-package com.playwright.tests;
+package UI.tests;
 
+import UI.pages.CartPage;
+import UI.pages.HomePage;
 import com.github.javafaker.Faker;
 import com.microsoft.playwright.Page;
-import com.playwright.Utils.BaseTest;
-import com.playwright.Utils.UI;
-import com.playwright.pages.CartPage;
-import com.playwright.pages.HomePage;
+import UI.Utils.BaseTest;
+import UI.Utils.UI;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

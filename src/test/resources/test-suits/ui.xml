@@ -8,7 +8,7 @@
 <!--    <test name="API tests" parallel="true" thread-count="4">-->
     <test name="UI testing module">
         <classes>
-            <class name="com.playwright.tests.HomePageTest">
+            <class name="UI.tests.HomePageTest">
                 <methods>
                     <include name="homePageHeaderItemsVisibilityChecks"/>
                     <include name="homePageContainerItemsVisibilityCheck"/>
@@ -16,7 +16,7 @@
                 </methods>
             </class>
 
-            <class name="com.playwright.tests.CartPageTest">
+            <class name="UI.tests.CartPageTest">
                 <methods>
                     <include name="testCompleteOrderFlow"/>
                     <include name="testCartPageVisibilityChecks"/>

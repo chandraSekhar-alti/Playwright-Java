@@ -1,8 +1,8 @@
-package com.playwright.tests;
+package UI.tests;
 
+import UI.Utils.BaseTest;
+import UI.pages.HomePage;
 import com.microsoft.playwright.Page;
-import com.playwright.Utils.BaseTest;
-import com.playwright.pages.HomePage;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

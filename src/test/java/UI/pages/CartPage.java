@@ -1,9 +1,9 @@
-package com.playwright.pages;
+package UI.pages;
 
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
-import com.playwright.Utils.UI;
+import UI.Utils.UI;
 
 import java.util.List;
 
