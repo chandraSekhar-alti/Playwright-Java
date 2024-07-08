@@ -2,10 +2,7 @@ package Accessibility.Utils;
 
 import UI.Utils.AuthActions;
 import UI.Utils.ReadPropertyFile;
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserContext;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.*;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -25,7 +22,7 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         playwright = Playwright.create();
-        browser = playwright.chromium().launch();
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         context = browser.newContext();
         page = context.newPage();
     }
