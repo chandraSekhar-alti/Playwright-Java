@@ -8,7 +8,7 @@
 <!--    <test name="API tests" parallel="true" thread-count="4">-->
     <test name="UI testing module">
         <classes>
-            <class name="UI.tests.HomePageTest">
+            <class name="Accessibility.Tests.LoginAccessibilityTests">
                 <methods>
                     <include name="homePageHeaderItemsVisibilityChecks"/>
                     <include name="homePageContainerItemsVisibilityCheck"/>
