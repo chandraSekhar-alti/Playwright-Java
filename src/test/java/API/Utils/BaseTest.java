@@ -1,4 +1,4 @@
-package API;
+package API.Utils;
 
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;

@@ -1,5 +1,6 @@
-package API;
+package API.Tests;
 
+import API.Utils.BaseTest;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIRequestContext;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Map;
 
-public class GETAPICallTest extends BaseTest{
+public class GETApiCallTest extends BaseTest {
 
 
     @Test
