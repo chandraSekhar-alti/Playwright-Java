@@ -39,3 +39,5 @@ build/
 
 ### ignore failure screenshots ###
 src/test/resources/Screenshots/*
+
+target/allure-results
