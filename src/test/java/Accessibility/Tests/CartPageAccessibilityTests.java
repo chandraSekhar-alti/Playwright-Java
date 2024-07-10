@@ -19,7 +19,7 @@ import java.util.Properties;
 
 public class CartPageAccessibilityTests extends BaseTest {
 
-    Properties properties = ReadPropertyFile.loadProperties("config.properties");
+    Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
     private final String userName = properties.getProperty("username");
     private final String password = properties.getProperty("password");
     private final String applicationUrl = properties.getProperty("appURL");

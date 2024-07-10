@@ -36,7 +36,7 @@ public class BaseTest {
         try {
             logger.info("Running BeforeSuite");
             browserFactory = new BrowserFactory();
-            Properties properties = ReadPropertyFile.loadProperties("config.properties");
+            Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
             applicationURL = properties.getProperty("appURL");
             userName = properties.getProperty("username");
             password = properties.getProperty("password");

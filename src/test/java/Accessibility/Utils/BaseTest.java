@@ -15,7 +15,7 @@ public class BaseTest {
     protected BrowserContext context;
     protected Page page;
 
-    Properties properties = ReadPropertyFile.loadProperties("config.properties");
+    Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
     private final String userName = properties.getProperty("username");
     private final String password = properties.getProperty("password");
 

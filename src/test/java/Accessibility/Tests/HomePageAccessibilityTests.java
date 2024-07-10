@@ -12,16 +12,13 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.Serial;
 import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
-import UI.Utils.AuthActions;
-
 public class HomePageAccessibilityTests extends BaseTest {
 
-    Properties properties = ReadPropertyFile.loadProperties("config.properties");
+    Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
     private final String applicationUrl = properties.getProperty("appURL");
 
     @Test(description = "Disabling individual scan rules")

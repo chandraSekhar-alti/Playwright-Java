@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15ecaafd-8bf5-4b38-928e-1406dee98972" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/Tests/PATCHApiCallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/Tests/PUTApiCallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/Utils/ConfigUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/POM.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/Tests/GETApiCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Tests/GETApiCallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/Tests/POSTApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Tests/POSTApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/CartPageAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/CartPageAccessibilityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/HomePageAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/HomePageAccessibilityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/LoginAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/LoginAccessibilityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UI/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/Utils/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UI/Utils/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/Utils/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/allure.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2idIYcerm5AQmJNlKTeWGeUqSfg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.API.Tests.executor": "Run",
+    "TestNG.Accessibility.Tests.executor": "Run",
+    "TestNG.C:/Users/chandrasekhar.alti/eclipse-workspace/Playwright_Java/src/test/resources/test-suites/AccessibilitySuite.xml.executor": "Run",
+    "TestNG.C:/Users/chandrasekhar.alti/eclipse-workspace/Playwright_Java/src/test/resources/test-suits/ui.xml.executor": "Run",
+    "TestNG.CartPageAccessibilityTests.executor": "Run",
+    "TestNG.CartPageTest.executor": "Run",
+    "TestNG.CartPageTest.failTestCase.executor": "Run",
+    "TestNG.CartPageTest.testCartPageVisibilityChecks.executor": "Run",
+    "TestNG.CartPageTest.verifyingOrderingAnItemFlow.executor": "Run",
+    "TestNG.CreateUserPostCallTest.postTest.executor": "Run",
+    "TestNG.FirstTest.executor": "Run",
+    "TestNG.GETApiCallTest.executor": "Run",
+    "TestNG.GETApiCallTest.getSpecificUserApiTest.executor": "Run",
+    "TestNG.HomePageTest.executor": "Run",
+    "TestNG.HomePageTest.shouldNotHaveAutomaticallyDetectableAccessibilityIssues.executor": "Run",
+    "TestNG.LoginAccessibilityTests.executor": "Run",
+    "TestNG.PATCHApiCallTest.executor": "Run",
+    "TestNG.POSTApiTest.PostDataTest.executor": "Run",
+    "TestNG.POSTApiTest.executor": "Run",
+    "TestNG.POSTApiTest.postDataUsingLombok.executor": "Run",
+    "TestNG.PUTApiCallTest.executor": "Run",
+    "TestNG.PUTApiCallTest.updateUserPutCallTest.executor": "Run",
+    "TestNG.SampleApiTest.executor": "Run",
+    "TestNG.SampleApiTest.firstTest.executor": "Run",
+    "TestNG.SampleApiTest.getSpecificUserApiTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chandrasekhar.alti/eclipse-workspace/selenium-java-testng-allure",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\properties" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.API.Tests">
+    <configuration name="API.Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.Tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GETApiCallTest.getSpecificUserApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.Tests.GETApiCallTest" />
+      <option name="METHOD_NAME" value="getSpecificUserApiTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PATCHApiCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.Tests.PATCHApiCallTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POSTApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.Tests.POSTApiTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PUTApiCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.Tests.PUTApiCallTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.API.Tests" />
+        <item itemvalue="TestNG.GETApiCallTest.getSpecificUserApiTest" />
+        <item itemvalue="TestNG.PUTApiCallTest" />
+        <item itemvalue="TestNG.POSTApiTest" />
+        <item itemvalue="TestNG.PATCHApiCallTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15ecaafd-8bf5-4b38-928e-1406dee98972" name="Changes" comment="" />
+      <created>1719814075792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719814075792</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UI/tests/CartPageTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

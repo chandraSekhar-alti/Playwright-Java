@@ -2,6 +2,7 @@ package API.Tests;
 
 import API.Utils.BaseTest;
 import API.Utils.Users;
+import UI.Utils.ReadPropertyFile;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
@@ -14,14 +15,19 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class POSTApiTest extends BaseTest {
 
+    protected String BaseUrl;
     Faker faker = new Faker();
 
 
     @Test
     public void PostDataTest() throws IOException {
+        Properties properties = ReadPropertyFile.loadProperties("properties/apiConfig.properties");
+        BaseUrl= properties.getProperty("reqResUrl");
+
         Map<String, Object> data = new HashMap<>();
         String fullName = faker.name().fullName();
         String emailAddress = faker.internet().emailAddress();
@@ -32,12 +38,12 @@ public class POSTApiTest extends BaseTest {
         data.put("gender", gender);
 
         APIRequestContext apiRequestContext = getApiRequestContext();
-        APIResponse postResponse = apiRequestContext.post("https://reqres.in/api/users",
+        APIResponse postResponse = apiRequestContext.post(BaseUrl,
                 RequestOptions.create()
                         .setData(data));
 
         Assert.assertTrue(postResponse.ok());
-        System.out.println("response status code is :- "+postResponse.status());
+        System.out.println("response status code is :- " + postResponse.status());
         Assert.assertEquals(postResponse.status(), 201);
         Assert.assertEquals(postResponse.statusText(), "Created");
 
@@ -51,26 +57,29 @@ public class POSTApiTest extends BaseTest {
     }
 
     @Test
-    public void postDataUsingLombok(){
+    public void postDataUsingLombok() {
+        Properties properties = ReadPropertyFile.loadProperties("properties/apiConfig.properties");
+        BaseUrl= properties.getProperty("reqResUrl");
+
         //Create user Object : using builder pattern
         Users userData = Users.builder()
-                                .name("sampleName")
-                                .email("demo@gmail.com")
-                                .gender("male")
-                                .status("active").build();
+                .name("sampleName")
+                .email("demo@gmail.com")
+                .gender("male")
+                .status("active").build();
 
         APIRequestContext apiRequestContext = getApiRequestContext();
-        APIResponse postResponse = apiRequestContext.post("https://reqres.in/api/users",
+        APIResponse postResponse = apiRequestContext.post(BaseUrl,
                 RequestOptions.create()
                         .setData(userData)
         );
-        Assert.assertEquals(postResponse.status(),201);
-        Assert.assertEquals(postResponse.statusText(),"Created");
+        Assert.assertEquals(postResponse.status(), 201);
+        Assert.assertEquals(postResponse.statusText(), "Created");
 
         String responseText = postResponse.text();
-        System.out.println("response text is : "+responseText);
+        System.out.println("response text is : " + responseText);
 
-        System.out.println("userData: "+userData);
+        System.out.println("userData: " + userData);
 
     }
 }

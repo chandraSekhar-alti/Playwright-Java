@@ -12,7 +12,7 @@ public class BrowserFactory {
     public Browser browser;
     Playwright playwright;
     public void BrowserSetUp(){
-        Properties properties = ReadPropertyFile.loadProperties("config.properties");
+        Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
         String browserName =properties.getProperty("browser");
         String channelName = properties.getProperty("binary");
         boolean runMode = Boolean.parseBoolean(properties.getProperty("headless"));

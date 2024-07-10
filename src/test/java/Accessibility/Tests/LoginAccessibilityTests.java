@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class LoginAccessibilityTests extends BaseTest {
-    Properties properties = ReadPropertyFile.loadProperties("config.properties");
+    Properties properties = ReadPropertyFile.loadProperties("properties/config.properties");
     private final String applicationUrl = properties.getProperty("appURL");
 
     @Test(description = "Excluding individual elements from a scan in the login page")
