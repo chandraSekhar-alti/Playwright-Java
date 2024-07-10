@@ -41,4 +41,4 @@ build/
 src/test/resources/Screenshots/*
 
 target/allure-results
-allure-results
+allure-results/
