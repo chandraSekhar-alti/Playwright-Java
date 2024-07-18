@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API-Test-Suites" time-out="300000" verbose="2" >
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    </listeners>
+    <!--    <test name="API tests" parallel="true" thread-count="4">-->
+    <test name="API testing module">
+        <classes>
+            <class name="API.Tests.PUTApiCallTest">
+                <methods>
+                    <include name="updateUserPutCallTest"/>
+                </methods>
+            </class>
+
+            <class name="API.Tests.PATCHApiCallTest">
+                <methods>
+                    <include name="updateUserDataPatchCallTest"/>
+                </methods>
+            </class>
+
+            <class name="API.Tests.POSTApiTest">
+                <methods>
+                    <include name="PostDataTest"/>
+                    <include name="postDataUsingLombok"/>
+                </methods>
+            </class>
+
+            <class name="API.Tests.GETApiCallTest">
+                <methods>
+                    <include name="getSpecificUserApiTest"/>
+                    <include name="getUserApiTest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

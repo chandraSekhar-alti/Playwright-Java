@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
@@ -44,31 +44,25 @@
             <scope>test</scope>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <!-- Log4j Dependencies -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
             <version>2.23.1</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.23.1</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j2-impl -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.23.1</version>
             <scope>test</scope>
         </dependency>
-
 
         <!-- Allure TestNG Dependency -->
         <dependency>
@@ -77,45 +71,41 @@
             <version>2.27.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons -->
+        <!-- Allure Java Commons Dependency -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
             <version>2.27.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <!-- JavaFaker Dependency -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/com.deque.html.axe-core/playwright -->
+        <!-- Axe-Core Playwright Dependency -->
         <dependency>
             <groupId>com.deque.html.axe-core</groupId>
             <artifactId>playwright</artifactId>
             <version>4.9.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <!-- Jackson Databind Dependency -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.17.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- Lombok Dependency -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.32</version>
             <scope>provided</scope>
         </dependency>
-
-
-
     </dependencies>
 
     <build>
@@ -125,18 +115,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/test-suites/UiSuite.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/test-suites/AccessibilitySuite.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/test-suites/ApiSuite.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <systemPropertyVariables>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
-                    <properties>
-                        <property>
-                            <name>listener</name>
-                            <value>io.qameta.allure.testng.AllureTestNg</value>
-                        </property>
-                    </properties>
                 </configuration>
             </plugin>
         </plugins>

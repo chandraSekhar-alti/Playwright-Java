@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15ecaafd-8bf5-4b38-928e-1406dee98972" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/Tests/PATCHApiCallTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/Tests/PUTApiCallTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/Utils/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test-suites/ApiSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/POM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API/Tests/GETApiCallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Tests/GETApiCallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API/Tests/POSTApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Tests/POSTApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/Utils/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/CartPageAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/CartPageAccessibilityTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/HomePageAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/HomePageAccessibilityTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/LoginAccessibilityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Tests/LoginAccessibilityTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Accessibility/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Accessibility/Utils/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UI/Utils/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/Utils/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UI/Utils/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UI/Utils/BrowserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/allure.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-suites/AccessibilitySuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-suites/AccessibilitySuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-suites/UiSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-suites/UiSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +66,7 @@
     "TestNG.SampleApiTest.executor": "Run",
     "TestNG.SampleApiTest.firstTest.executor": "Run",
     "TestNG.SampleApiTest.getSpecificUserApiTest.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "api-component/chandra",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/chandrasekhar.alti/eclipse-workspace/selenium-java-testng-allure",
     "project.structure.last.edited": "Project",
@@ -203,6 +186,17 @@
       <updated>1719814075792</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
