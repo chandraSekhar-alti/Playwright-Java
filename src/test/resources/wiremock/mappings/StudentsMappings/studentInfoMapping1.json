@@ -1,0 +1,17 @@
+{
+  "id" : "086dbc58-5084-4faa-a054-8176afed4020",
+  "request" : {
+    "url" : "/student/rollNo=1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "StudentsData/student1.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "086dbc58-5084-4faa-a054-8176afed4020",
+  "persistent" : true,
+  "insertionIndex" : 3
+}

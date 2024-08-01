@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15ecaafd-8bf5-4b38-928e-1406dee98972" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test-suites/ApiSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/MockApi/Master.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/MockApi/MockBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/MockApi/Tests/PostDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/API/MockApi/Tests/PutApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wiremock/__files/StudentsData/student1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wiremock/__files/shippingAddressData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wiremock/mappings/StudentsMappings/studentInfoMapping1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wiremock/mappings/customerShippingAddress.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/POM.xml" beforeDir="false" afterPath="$PROJECT_DIR$/POM.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/properties/apiConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-suites/AccessibilitySuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-suites/AccessibilitySuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-suites/UiSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-suites/UiSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Master.executor": "Run",
+    "Application.MockBaseTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.API.Tests.executor": "Run",
     "TestNG.Accessibility.Tests.executor": "Run",
     "TestNG.C:/Users/chandrasekhar.alti/eclipse-workspace/Playwright_Java/src/test/resources/test-suites/AccessibilitySuite.xml.executor": "Run",
@@ -57,18 +65,30 @@
     "TestNG.HomePageTest.executor": "Run",
     "TestNG.HomePageTest.shouldNotHaveAutomaticallyDetectableAccessibilityIssues.executor": "Run",
     "TestNG.LoginAccessibilityTests.executor": "Run",
+    "TestNG.Master.startServer.executor": "Run",
+    "TestNG.MockBaseTest.executor": "Run",
     "TestNG.PATCHApiCallTest.executor": "Run",
     "TestNG.POSTApiTest.PostDataTest.executor": "Run",
     "TestNG.POSTApiTest.executor": "Run",
     "TestNG.POSTApiTest.postDataUsingLombok.executor": "Run",
     "TestNG.PUTApiCallTest.executor": "Run",
     "TestNG.PUTApiCallTest.updateUserPutCallTest.executor": "Run",
+    "TestNG.PostDataTest.executor": "Run",
+    "TestNG.PostDataTest.postDataAsTextInServerTest.executor": "Run",
+    "TestNG.PostDataTest.postStudentsDataInMockServerTest.executor": "Run",
+    "TestNG.PutApiTest.executor": "Run",
+    "TestNG.PutApiTest.updateProjectDetailsTest.executor": "Run",
     "TestNG.SampleApiTest.executor": "Run",
     "TestNG.SampleApiTest.firstTest.executor": "Run",
     "TestNG.SampleApiTest.getSpecificUserApiTest.executor": "Run",
+    "TestNG.StartServerFromCodeTest.executor": "Run",
+    "TestNG.StartServerFromCodeTest.testCode.executor": "Debug",
+    "TestNG.jarFileTest.sampleTest.executor": "Run",
+    "TestNG.sampleTest.firstTest.executor": "Debug",
+    "ToolWindowRun.ShowToolbar": "false",
     "git-widget-placeholder": "api-component/chandra",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chandrasekhar.alti/eclipse-workspace/selenium-java-testng-allure",
+    "last_opened_file_path": "C:/2024/AccessModifiers",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -76,38 +96,62 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\__files" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\wiremockFiles" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\java\API\MockApi" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\properties" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\wiremock\mappings\StudentsMappings" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\wiremock\__files\StudentsData" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\wiremock" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources" />
+      <recent name="C:\Users\chandrasekhar.alti\eclipse-workspace\Playwright_Java\src\test\resources\wiremockFiles\mappings\mapping.json" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.API.Tests">
-    <configuration name="API.Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Master">
+    <configuration name="Master" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="API.MockApi.Master" />
       <module name="Playwright_Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="API.Tests.*" />
+          <option name="PATTERN" value="API.MockApi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="API.Tests" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API.MockApi.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API.MockApi.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.MockApi.Tests.PostDataTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GETApiCallTest.getSpecificUserApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostDataTest.postDataAsTextInServerTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright_Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="API.Tests.*" />
+          <option name="PATTERN" value="API.MockApi.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="API.Tests" />
-      <option name="MAIN_CLASS_NAME" value="API.Tests.GETApiCallTest" />
-      <option name="METHOD_NAME" value="getSpecificUserApiTest" />
+      <option name="PACKAGE_NAME" value="API.MockApi.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.MockApi.Tests.PostDataTest" />
+      <option name="METHOD_NAME" value="postDataAsTextInServerTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,16 +159,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PATCHApiCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PutApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright_Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="API.Tests.*" />
+          <option name="PATTERN" value="API.MockApi.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="API.Tests" />
-      <option name="MAIN_CLASS_NAME" value="API.Tests.PATCHApiCallTest" />
+      <option name="PACKAGE_NAME" value="API.MockApi.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.MockApi.Tests.PutApiTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -132,34 +176,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POSTApiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PutApiTest.updateProjectDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright_Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="API.Tests.*" />
+          <option name="PATTERN" value="API.MockApi.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="API.Tests" />
-      <option name="MAIN_CLASS_NAME" value="API.Tests.POSTApiTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PUTApiCallTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Playwright_Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="API.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="API.Tests" />
-      <option name="MAIN_CLASS_NAME" value="API.Tests.PUTApiCallTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="API.MockApi.Tests" />
+      <option name="MAIN_CLASS_NAME" value="API.MockApi.Tests.PutApiTest" />
+      <option name="METHOD_NAME" value="updateProjectDetailsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -168,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.API.Tests" />
-        <item itemvalue="TestNG.GETApiCallTest.getSpecificUserApiTest" />
-        <item itemvalue="TestNG.PUTApiCallTest" />
-        <item itemvalue="TestNG.POSTApiTest" />
-        <item itemvalue="TestNG.PATCHApiCallTest" />
+        <item itemvalue="Application.Master" />
+        <item itemvalue="TestNG.PutApiTest" />
+        <item itemvalue="TestNG.PutApiTest.updateProjectDetailsTest" />
+        <item itemvalue="TestNG.PostDataTest" />
+        <item itemvalue="TestNG.PostDataTest.postDataAsTextInServerTest" />
       </list>
     </recent_temporary>
   </component>

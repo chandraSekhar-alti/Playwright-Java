@@ -1,0 +1,20 @@
+{
+  "student": {
+    "id": 1,
+    "name": "John Doe",
+    "age": 20,
+    "email": "john.doe@example.com",
+    "courses": [
+      {
+        "course_id": 101,
+        "course_name": "Mathematics",
+        "grade": "A"
+      },
+      {
+        "course_id": 102,
+        "course_name": "Physics",
+        "grade": "B"
+      }
+    ]
+  }
+}

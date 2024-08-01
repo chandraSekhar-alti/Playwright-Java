@@ -1,0 +1,17 @@
+{
+  "id" : "79418638-896f-4dd6-94db-14cb84c9517f",
+  "request" : {
+    "url" : "/shipping/address",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "shippingAddressData.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "79418638-896f-4dd6-94db-14cb84c9517f",
+  "persistent" : true,
+  "insertionIndex" : 0
+}

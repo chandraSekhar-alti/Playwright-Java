@@ -1,0 +1,13 @@
+{
+  "name": "chandra",
+  "sku" : "20223",
+  "price": 235.87,
+  "shipTo" : {
+    "name" : "Jahn Smith",
+    "address" : "123 Maple Street",
+    "city": "pretend ville",
+    "country" : "UAS",
+    "state" : "NY",
+    "zip" : 12345
+  }
+}
